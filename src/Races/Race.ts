@@ -16,6 +16,5 @@ export default abstract class Race {
 
   public static createdRacesInstances(): number {
     throw Error('Not implemented');
-    // return Race._racesInstances;
   }
 }
