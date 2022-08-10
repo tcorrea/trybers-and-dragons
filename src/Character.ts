@@ -1,6 +1,7 @@
 import Archetype, { Mage } from './Archetypes';
 import Energy from './Energy';
 import Fighter from './Fighter';
+import SimpleFighter from './Fighter/SimpleFighter';
 import Race, { Elf } from './Races';
 import getRandomInt from './utils';
 
@@ -28,7 +29,7 @@ export default class Character implements Fighter {
     };
   }
 
-  public attack(enemy: Fighter): void {
+  public attack(enemy: SimpleFighter): void {
     // Toda vez que acontecer um ataque, o inimigo recebido por parâmetro recebe um dano;
     // Este dano deve ser equivalente a força (strength) de quem ataca.
     // enemy.receiveDamage(this.strength);
