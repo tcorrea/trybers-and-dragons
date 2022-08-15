@@ -18,7 +18,6 @@ export default class Monster implements SimpleFighter {
   }
 
   public attack(enemy: SimpleFighter): void {
-    // this.receiveDamage(enemy.strength)
     enemy.receiveDamage(this._strength);
   }
 
